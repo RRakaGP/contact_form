@@ -8,6 +8,7 @@ html {
 
 body{
     margin: 0;
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -41,13 +42,14 @@ header{
     position:absolute;
     left: 0px;
     right: 0px;
+    background-color: #000000;
     border-bottom: 1px solid #423940;
 }
 
 header.fixed{
-    background-color: #ffffff;
+    background-color:black;
     position: fixed;
-    border-color: #eeeeee;
+    border-color:lightgrey;
     animation: fixHeader .5s ease;
     z-index: 111;
 }
@@ -69,13 +71,13 @@ header .row{
 header .brand-name a{
     text-decoration: none;
     font-size: 22px;
-    font-weight: 600;
-    color: #000000;
+    font-weight: 500;
+    color:lavenderblush;
     position: relative;
 }
 
 header.fixed .brand-name a{
-    color: #000000;
+    color: lavenderblush;
 }
 
 header .navbar ul{
@@ -86,40 +88,43 @@ header .navbar ul{
 
 header .navbar ul li{
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 3px;
 }
 
 header .navbar ul li a{
     font-size: 15px;
     text-decoration: none;
-    line-height: 70px;
-    color: #000000;
+    line-height: 30px;
+    color: lavenderblush;
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
 }
 
 header.fixed .navbar ul li a{
-    color: #000000;
+    color: lavenderblush;
 }
-
+.nav-link :hover{
+    color: rgb(61, 240, 180);
+}
 header .navbar ul li a::before {
     content: '';
     height: 3px;
-    background-color: #4a4a4a;
+    width: 10px;
+    background-color: lavenderblush;
     width: 0%;
     position: absolute;
     right: 0px;
     bottom: -1px;
-    transition: all .5s ease;
+    transition: all .4s ease;
 }
 
-header.fixed .navbar ul li a::before{
-    background-color: #4a4a4a;
+header.fixed .navbar ul li :hover{
+color:rgb(61, 240, 180) ;
 }
 
 header .navbar ul li a:hover:before{
-    width: 65px;
+    width: 45px;
     left: 0;
 }
 
@@ -151,33 +156,51 @@ header .navbar ul li a:hover:before{
     padding-left: 35px;
     border-left: 5px solid #4a4a4a; 
 }
+.form-heading{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background: linear-gradient(to right,rgb(122, 243, 9) 10%, rgb(86, 253, 9) 20%, rgb(61, 58, 243) 40%,rgb(245, 31, 31) 60%,
+           rgb(231, 170, 37) 80%,rgb(255, 183, 29) 100%);  
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;  
+}
+.themes{
+background: linear-gradient(to right,rgb(3, 247, 153) 0% , rgb(5, 245, 225) 100%);
+border-radius: 5px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 55px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;  
+}
+.small{
+          padding-left: 10px;
+
+}
 
 .home .home-content .block h1{
     color: #000000;
     font-size: 65px;
     font-weight: 600;
     margin: 0;
-    padding: 0;
+    padding-left:20px;
 }
 .home .home-content .block h3{
-    color: #000000;
     font-size: 25px;
     font-weight: 500;
+    color: #423940;
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
 }
 .home .home-content .block h5{
     color: #000000;
     font-size: 15px;
     font-weight: 700;
+    padding-left: 20px;
 }
-
 .home .home-content .block h6{
-    color: #000000;
     font-size: 18px;
     font-weight: 500;
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
 }
 
 .home .home-content .block .cv-button{
@@ -209,7 +232,7 @@ header .navbar ul li a:hover:before{
     color: #000000;
 }
 
-.form-section .section-title p.small{
+.form-section  p.small{
     display: block;
     font-size: 14px;
     color: #838383;
@@ -217,7 +240,6 @@ header .navbar ul li a:hover:before{
     text-transform: uppercase!important;
     letter-spacing: 2px;
 }
-
 /* Form css */
 img{
   width: 100%;
